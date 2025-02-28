@@ -106,7 +106,7 @@ main .content .text-content::-webkit-scrollbar-thumb{
 main .content .text-content .elem{
     flex-shrink: 0;
     height: 100%;
-    width: 50%;
+    width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -121,5 +121,23 @@ main .content .image-content{
     height: 60%;
     width: 100%;
     display: flex;
-    
+    overflow-x: auto;
+}
+
+main .content .image-content img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+main .content .image-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+    width: 30px;
+}
+
+main .content .image-content::-webkit-scrollbar-thumb{
+  background-color: tomato;
+ 
 }
