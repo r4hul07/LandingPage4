@@ -82,5 +82,44 @@ main .nav1 h4 {
 main .content{
     height: calc(100% - 120px);
     width: 100%;
-    background-color: #1cffc3;
+}
+
+main .content .text-content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+main .content .text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+    width: 30px;
+}
+
+main .content .text-content::-webkit-scrollbar-thumb{
+  background-color: tomato;
+ 
+}
+
+main .content .text-content .elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .content .text-content .elem h2{
+    font-size: 5vw;
+    font-weight: 250;
+}
+
+main .content .image-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    
 }
