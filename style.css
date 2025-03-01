@@ -62,6 +62,10 @@ main nav .b h4:hover {
     text-decoration: underline;
 }
 
+main nav .b i {
+    display: none;
+}
+
 main .nav1{
     height: 60px;
     width: 100%;
@@ -138,4 +142,109 @@ main .content .image-content::-webkit-scrollbar{
 main .content .image-content::-webkit-scrollbar-thumb{
   background-color: tomato;
  
+}
+
+@media (max-width: 600px){
+    
+    main nav {
+        padding: 8px;
+        height: 50px;
+    }
+    
+    main nav .a {
+        gap: 2px;
+    }
+    
+    main nav .a .gola {
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: #000;
+    }
+    
+    main nav .a .gola:hover {
+        background: #f00;
+    }
+    
+    main nav .b {
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    main nav .b h4 {
+        font-size: 4.5vw;
+        font-weight: 400;
+        display: none;
+    }
+
+    main nav .b h4:nth-child(1){
+        display: initial;
+    }
+
+    
+    main nav .b h4 span {
+        color: rgb(124, 124, 124);
+        margin-left: 5px;
+    }
+
+    main nav .b i {
+        display: initial;
+        font-size: 5vw;
+    }
+    
+    main nav .b h4:hover {
+        text-decoration: underline;
+    }
+    
+    main .nav1{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        height: 50px;
+        padding: 10px 12px;
+        gap: 15px;
+        border: 1px solid #000;
+    }
+    
+    main .nav1 h4 {
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+    
+    main .content{
+        height: calc(100% - 100px);
+        width: 100%;
+    }
+    
+    
+    main .content .text-content::-webkit-scrollbar{
+        height: 3px;
+    }
+    
+    main .content .text-content::-webkit-scrollbar-thumb{
+      background-color:#000
+     
+    }
+    
+    main .content .text-content .elem{
+        width: 100%;
+    }
+    
+    main .content .text-content .elem h2{
+        font-size: 12vw;
+        font-weight: 250;
+    }
+    
+    
+    
+    main .content .image-content::-webkit-scrollbar{
+        background-color: transparent;
+        height: 3px
+    }
+    
+    main .content .image-content::-webkit-scrollbar-thumb{
+      background-color:#000
+     
+    }
 }
